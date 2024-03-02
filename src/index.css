@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+/* IntroductionStyles.css */
+
+.intro-container {
+  margin-top: 2;
+  margin-bottom: 50px;
+  text-align: left;
+  padding-left: 50px; /* Adjust the value as needed */
+  padding-right: 50px; /* Adjust the value as needed */
+}
+
+.intro-title {
+  color: white;
+  font-size: 72px;
+  font-weight: 600;
+  font-family: "Poppins";
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+/* Media query for screens with a maximum width of 767px (adjust as needed) */
+@media (max-width: 767px) {
+  .intro-title {
+    font-size: 36px; /* Adjust the font size for smaller screens */
+    margin-top: -10px; /* Adjust the margin-top as needed */
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+  }
+}
+
+.title1-style {
+  color: white;
+}
+
+.title2-style {
+  color: white;
+}
+
+.title3-style {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.intro-keypoints {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.intro-keypoint {
+  color: white;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 0; /* Align text to the left */
+}
+
+.intro-subtitle {
+  color: #d9dddc;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+/* 
+==================
+contact-container
+==================
+*/
+.contact-container {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+  max-width: auto;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.contact-container .contact-heading {
+  font-family: "roboto";
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  margin-bottom: 20;
+}
+
+/* Custom CSS for TextField components */
+
+/* Style for regular text fields (name and email) */
+.custom-textfield {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.custom-textfield label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.custom-textfield input {
+  width: 100%;
+  height: 40px; /* Set the height as needed */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.custom-textfield .Mui-error input {
+  border-color: red;
+}
+
+.custom-textfield .MuiOutlinedInput-root {
+  border-radius: 4px;
+}
+
+.custom-textfield .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #009688;
+}
+
+/* Style for the message field */
+.message-textfield {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.message-textfield label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message-textfield textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.message-textfield .Mui-error textarea {
+  border-color: red;
+}
+
+.message-textfield .MuiOutlinedInput-root {
+  border-radius: 4px;
+}
+
+.message-textfield .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #009688;
+}

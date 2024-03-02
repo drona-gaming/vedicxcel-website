@@ -1,0 +1,39 @@
+{
+  "name": "vedicxcel-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Developed by VedicXcel Innovations",
+  "author": "VedicXcel Innovations",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "host": "vite --host"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.7",
+    "firebase": "^10.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.4",
+    "react-router-dom": "^6.22.2",
+    "react-slick": "^0.30.2",
+    "reactjs-popup": "^2.0.6",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-flow": "^7.23.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6",
+    "vite": "^3.0.0"
+  }
+}
