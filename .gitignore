@@ -26,3 +26,4 @@ dist-ssr
 
 # VScode
 .vscode
+package-lock.json

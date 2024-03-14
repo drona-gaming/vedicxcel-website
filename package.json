@@ -1,7 +1,7 @@
 {
   "name": "vedicxcel-web",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Developed by VedicXcel Innovations",
   "author": "VedicXcel Innovations",
   "license": "MIT",
@@ -13,18 +13,14 @@
     "host": "vite --host"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "@mui/material": "^5.8.7",
     "firebase": "^10.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
     "react-router-dom": "^6.22.2",
     "react-slick": "^0.30.2",
-    "reactjs-popup": "^2.0.6",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@babel/plugin-syntax-flow": "^7.23.3",

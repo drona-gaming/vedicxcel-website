@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { getDatabase, push } from "firebase/database";
 import { onValue, ref } from "firebase/database";
 
 const firebaseConfig = {
@@ -19,8 +19,6 @@ const firebaseApp = initializeApp(firebaseConfig);
 // It will be imported into your react app whenever it is needed
 const db = getDatabase(firebaseApp);
 
-export { db };
-
 export const fetchDataFromFirebase = (callback) => {
   const query = ref(db);
 
@@ -32,4 +30,13 @@ export const fetchDataFromFirebase = (callback) => {
       console.log("Data does not exist");
     }
   });
+};
+
+export const writeToFirebase = async (path, data) => {
+  try {
+    await push(ref(db, path), data);
+    console.log("Data written to Firebase successfully");
+  } catch (error) {
+    console.error("Error writing data to Firebase:", error);
+  }
 };

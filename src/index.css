@@ -31,7 +31,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
+  text-fill-color: transparent;
 }
 
 .bg-blue-gradient {
@@ -139,44 +139,286 @@
   filter: blur(750px);
 }
 
-/* IntroductionStyles.css */
+/* #Additional CSS for custom pages */
 
+/* #Custom Background */
+.Dark-Gradient {
+  background: linear-gradient(
+    144.39deg,
+    #0e0e0e -278.56%,
+    #0a0a0a -78.47%,
+    #11101d 91.61%
+  );
+}
+
+/* #Programming */
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px; /* Add margin below the carousel */
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-image {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-caption {
+  text-align: center;
+  margin-top: 20px; /* Add margin */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow effect */
+  color: transparent;
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Adjust font weight */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.carousel-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #ffffff, #e6e6e6, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.carousel-title:hover {
+  transform: scale(1.15); /* Scale up the text on hover */
+  background: linear-gradient(135deg, #e6ffff, #66cccc, #004c66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slick-arrow {
+  display: none !important; /* Hide the slick arrows */
+}
+
+.slick-dots li button:before {
+  color: #def9fa;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #66cccc;
+}
+
+/* #Introduction */
+/* #TermsService */
 .intro-container {
-  margin-top: 2;
-  margin-bottom: 50px;
-  text-align: left;
-  padding-left: 50px; /* Adjust the value as needed */
-  padding-right: 50px; /* Adjust the value as needed */
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+  text-align: center;
+  padding: 0 5vw;
+  background: linear-gradient(
+    144.39deg,
+    #0e0e0e -278.56%,
+    #0a0a0a -78.47%,
+    #11101d 91.61%
+  );
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .intro-title {
   color: white;
-  font-size: 72px;
+  font-size: 6vw;
   font-weight: 600;
-  font-family: "Poppins";
-  text-align: center;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: -2vw;
+  margin-bottom: 2vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Media query for screens with a maximum width of 767px (adjust as needed) */
+.intro-keypoints {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 95%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5vw;
+  background: linear-gradient(
+    144.39deg,
+    #0e0e0e -278.56%,
+    #0a0a0a -78.47%,
+    #11101d 91.61%
+  );
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-keypoint {
+  color: white;
+  padding: 1.5vw;
+  margin-bottom: 1.5vw;
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro-keypoint span {
+  display: block;
+}
+
+.intro-keypoint:hover {
+  transform: translateY(-3px);
+}
+
+.intro-subtitle {
+  color: #def9fa;
+}
+
 @media (max-width: 767px) {
   .intro-title {
-    font-size: 36px; /* Adjust the font size for smaller screens */
-    margin-top: -10px; /* Adjust the margin-top as needed */
-    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+    font-size: 8vw;
+    margin-top: -1vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .intro-keypoint {
+    margin-bottom: 18px;
+    padding: 18px;
+  }
+
+  .intro-subtitle {
+    line-height: 7vw;
   }
 }
 
-.title1-style {
+/* #ContactUs */
+.banner-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: white;
+  padding: 4em 2em;
+  animation: fadeInUp 1s ease-out;
+  background: linear-gradient(
+    144.39deg,
+    #0e0e0e -278.56%,
+    #0a0a0a -78.47%,
+    #11101d 91.61%
+  );
 }
 
-.title2-style {
-  color: white;
+.banner-contact-img {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.title3-style {
+.contact-form {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  color: #11101d;
+  font-family: "Arial", sans-serif;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.8em;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  color: #11101d;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.contact-form span {
+  display: none;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact-form span.visible {
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    max-width: 90%;
+  }
+}
+
+/* PartnerLogin */
+.partner-body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  max-width: 500px;
+  min-width: 400px;
+  width: 30%;
+  max-height: 60%;
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
     #def9fa 0.89%,
@@ -186,127 +428,112 @@
     #5ce1e6 71.54%,
     #33bbcf 100%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  border-radius: 25px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.intro-keypoints {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 0;
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.intro-keypoint {
-  color: white;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  padding-left: 0; /* Align text to the left */
-}
-
-.intro-subtitle {
-  color: #d9dddc;
-  margin-top: 20px;
+.header-title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
-/* 
-==================
-contact-container
-==================
-*/
-.contact-container {
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  max-width: 100%;
+}
+
+.row input {
+  width: 80%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.25rem;
+  box-shadow: inset 0px -3px 0px 0px black;
+  transition: box-shadow 0.2s ease-in;
+  background: transparent;
+  color: black;
+}
+
+.row input:focus {
+  box-shadow: inset 0px -3px 0px 0px rgba(26, 107, 112, 0.7);
+  outline: none;
+}
+
+.row input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+  color: black;
+}
+
+.row input:hover::-webkit-input-placeholder,
+.row input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.row label {
+  align-self: start;
+  padding-left: 4.2rem;
+  padding-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.row button {
+  border-radius: 25px;
+  width: 80%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
   background: linear-gradient(
     153.47deg,
     rgba(255, 255, 255, 0) -341.94%,
     #14101d 95.11%
   );
-  max-width: auto;
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
 }
 
-.contact-container .contact-heading {
-  font-family: "roboto";
-  font-size: 2rem;
-  text-align: center;
-  text-transform: capitalize;
-  color: white;
-  margin-bottom: 20;
+.row button:hover {
+  opacity: 0.8;
 }
 
-/* Custom CSS for TextField components */
-
-/* Style for regular text fields (name and email) */
-.custom-textfield {
-  width: 100%;
-  margin-bottom: 10px;
+/* ReportPage */
+.table-cell {
+  @apply py-2 px-4 border-b text-center;
 }
 
-.custom-textfield label {
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 5px;
-  display: block;
+.table {
+  @apply min-w-full border border-gray-300;
 }
 
-.custom-textfield input {
-  width: 100%;
-  height: 40px; /* Set the height as needed */
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #fff;
-  font-size: 16px;
+.table th,
+.table td {
+  @apply py-2 px-4 border-b text-center;
 }
 
-.custom-textfield .Mui-error input {
-  border-color: red;
+.table tbody tr:nth-child(even) {
+  @apply bg-gray-100;
 }
 
-.custom-textfield .MuiOutlinedInput-root {
-  border-radius: 4px;
+.table tbody {
+  @apply text-center;
 }
 
-.custom-textfield .Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #009688;
+.pagination-button {
+  @apply mx-2 p-2 rounded;
 }
 
-/* Style for the message field */
-.message-textfield {
-  width: 100%;
-  margin-bottom: 10px;
+.pagination-button.active {
+  @apply bg-blue-500 text-white;
 }
 
-.message-textfield label {
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.message-textfield textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #fff;
-  font-size: 16px;
-}
-
-.message-textfield .Mui-error textarea {
-  border-color: red;
-}
-
-.message-textfield .MuiOutlinedInput-root {
-  border-radius: 4px;
-}
-
-.message-textfield .Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #009688;
+.pagination-button.inactive {
+  @apply bg-gray-200;
 }
