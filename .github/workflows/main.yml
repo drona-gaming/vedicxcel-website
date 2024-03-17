@@ -1,0 +1,27 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Build React App
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        run: |
+          # Replace the placeholders with your Cloudflare Pages configuration
+          echo "Deploying to Cloudflare Pages..."
+          # Add commands to deploy to Cloudflare Pages here
+          echo "Deployment to Cloudflare Pages completed."
