@@ -10,8 +10,7 @@
     "sitemap": "babel-node src/sitemap-generator.js",
     "predeploy": "npm run sitemap",
     "dev": "vite",
-    "build": "npm run custom-build",
-    "custom-build": "npm install --legacy-peer-deps && npm run vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "host": "vite --host"
   },
