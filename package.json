@@ -7,11 +7,11 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "install": "npm install --legacy-peer-deps",
     "sitemap": "babel-node src/sitemap-generator.js",
     "predeploy": "npm run sitemap",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run custom-build",
+    "custom-build": "npm install --legacy-peer-deps && npm run vite build",
     "preview": "vite preview",
     "host": "vite --host"
   },
