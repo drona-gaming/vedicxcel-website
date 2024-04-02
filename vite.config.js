@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { splitVendorChunkPlugin } from "vite";
+import { exec } from "child_process";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), splitVendorChunkPlugin()],
+  plugins: [sitemap(), react(), splitVendorChunkPlugin()],
   build: {
+    copyPublicDir: true,
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -23,3 +25,10 @@ export default defineConfig({
     },
   },
 });
+
+function sitemap() {
+  exec("npm run sitemap", (_, output, err) => {
+    if (output) console.log(output);
+    if (err) console.log(err);
+  });
+}

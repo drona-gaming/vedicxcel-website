@@ -1,3 +1,5 @@
+import { react } from "babel-types";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],

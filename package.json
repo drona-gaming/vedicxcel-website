@@ -9,7 +9,7 @@
   "scripts": {
     "sitemap": "babel-node src/sitemap-generator.js",
     "dev": "vite",
-    "build": "npm run sitemap && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "host": "vite --host"
   },
