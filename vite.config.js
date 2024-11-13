@@ -1,11 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { splitVendorChunkPlugin } from "vite";
-import { exec } from "child_process";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [sitemap(), react(), splitVendorChunkPlugin()],
+  plugins: [react(), splitVendorChunkPlugin()],
   build: {
     copyPublicDir: true,
     rollupOptions: {
@@ -24,11 +22,8 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    port: 3000,
+    open: true,
+  },
 });
-
-function sitemap() {
-  exec("npm run sitemap", (_, output, err) => {
-    if (output) console.log(output);
-    if (err) console.log(err);
-  });
-}
