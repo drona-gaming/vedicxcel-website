@@ -24,7 +24,7 @@ VedicXcel Web is a user interface and user experience (UI/UX) website developed 
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/surjava56351/vedicXcell.git`
+1. Clone the repository: `git clone https://github.com/drona-gaming/vedicxcel-website.git`
 2. Navigate to the project directory: `cd repository`
 3. Install the dependencies: `npm install`
 
