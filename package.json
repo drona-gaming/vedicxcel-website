@@ -7,9 +7,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "sitemap": "babel-node src/sitemap-generator.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node generate-sitemap.js",
     "preview": "vite preview",
     "host": "vite --host"
   },
@@ -19,23 +18,17 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
     "react-router-dom": "^6.22.2",
-    "react-router-sitemap": "^1.2.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-flow": "^7.23.3",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.0",
-    "autoprefixer": "^10.4.7",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.6",
-    "vite": "^3.0.0"
+    "@types/react": "^18.2.58",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
   }
 }
