@@ -148,71 +148,94 @@
 }
 
 /* #Programming */
-.container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  /* Add margin below the carousel */
+.slick-slider {
+  margin-bottom: 40px;
 }
 
-.carousel-item {
-  position: relative;
+.slick-slide {
+  padding: 20px;
 }
 
-.carousel-image {
-  display: block;
-  margin: 0 auto;
-  /* Center horizontally */
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+.slick-dots {
+  bottom: -40px;
 }
 
-.carousel-caption {
-  text-align: center;
-  margin-top: 20px;
-  /* Add margin */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* Add text shadow effect */
-  color: transparent;
-  font-size: 18px;
-  /* Adjust font size */
-  font-weight: bold;
-  /* Adjust font weight */
-  transition: transform 0.3s ease;
-  /* Add transition effect */
-}
-
-.carousel-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  background: linear-gradient(135deg, #ffffff, #e6e6e6, #cccccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  transition: transform 0.3s ease;
-  /* Add transition effect */
-}
-
-.carousel-title:hover {
-  transform: scale(1.15);
-  /* Scale up the text on hover */
-  background: linear-gradient(135deg, #e6ffff, #66cccc, #004c66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.slick-arrow {
-  display: none !important;
-  /* Hide the slick arrows */
+.slick-dots li {
+  margin: 0 6px;
 }
 
 .slick-dots li button:before {
-  color: #def9fa;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 10px;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #66cccc;
+  color: #5ce1e6;
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: #5ce1e6;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: -30px;
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .slick-prev {
+    left: -20px;
+  }
+
+  .slick-next {
+    right: -20px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 24px;
+  }
+
+  .slick-slide {
+    padding: 10px;
+  }
 }
 
 /* #TermsService */
